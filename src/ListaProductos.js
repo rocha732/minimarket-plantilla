@@ -8,21 +8,21 @@ function ListaProductos() {
     setProducts(data);
   }, []);
   return (
-    <div className="shadow-sm  bg-white md:container md:mx-auto">
-      <table className="md:table-auto border-4 ">
-        <thead className="border-2 bg-slate-400 text-center rounded-md">
+    <div className="sm:container rounded-lg ">
+      <table className="table-auto border-collapse border border-slate-500 ">
+        <thead className="text-center">
           <tr>
-            <td>Producto</td>
-            <td>Descripcion</td>
-            <td>Precio</td>
+            <th className="border border-slate-600">Producto</th>
+            <th className="border border-slate-600">Descripcion</th>
+            <th className="border border-slate-600">Precio</th>
           </tr>
         </thead>
-        <tbody className="border-2">
+        <tbody className=" ">
           {products.map((products) => (
             <tr key={products.id}>
-              <td>{products.title}</td>
-              <td>{products.description}</td>
-              <td>{products.price}</td>
+              <td className="border border-slate-700">{products.title}</td>
+              <td className="border border-slate-700">{products.description}</td>
+              <td className="border border-slate-700">{products.price}</td>
             </tr>
           ))}
         </tbody>
