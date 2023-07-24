@@ -1,12 +1,9 @@
-import './App.css';
-import { FaBeer } from "react-icons/fa";
+import ListaProductos from "./ListaProductos";
 
 function App() {
   return (
     <>
-    <h1 className="text-3xl font-bold underline">
-      Hello world!  <FaBeer />
-    </h1>
+      <ListaProductos />
     </>
   );
 }

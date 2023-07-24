@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## React Icons
+https://react-icons.github.io/react-icons
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
