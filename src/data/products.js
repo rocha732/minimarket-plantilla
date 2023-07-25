@@ -51,7 +51,7 @@ export const products = [
     thumbnail: "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
     images: ["https://i.dummyjson.com/data/products/3/1.jpg"],
   },
-  {
+  /*{
     id: 4,
     title: "OPPOF19",
     description: "OPPO F19 is officially announced on April 2021.",
@@ -572,5 +572,5 @@ export const products = [
       "https://i.dummyjson.com/data/products/30/3.jpg",
       "https://i.dummyjson.com/data/products/30/thumbnail.jpg",
     ],
-  },
+  },*/
 ];
