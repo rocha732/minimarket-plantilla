@@ -16,13 +16,18 @@ function App() {
         title,
         description,
         price,
+        id: products.length + 1,
       },
     ]);
   }
+  function deleteProduct(productsID){
+    setProducts(products.filter((products) => products.id !== productsID))
+  }
+
   return (
     <div className="md:flex sm:flex-col">
-      <AgregarProductos createProduct={createProduct}/>
-      <ListaProductos products={products}/>
+      <AgregarProductos createProduct={createProduct} />
+      <ListaProductos products={products} deleteProduct={deleteProduct}/>
     </div>
   );
 }
