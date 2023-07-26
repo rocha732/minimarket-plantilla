@@ -1,5 +1,6 @@
 import AgregarProductos from "./AgregarProductos";
 import ListaProductos from "./ListaProductos";
+import PanelInicial from "./PanelInicial";
 import { products as data } from "./data/products";
 import { useState, useEffect } from "react";
 
@@ -25,7 +26,8 @@ function App() {
   }
 
   return (
-    <div className="md:flex sm:flex-col">
+    <div>
+      <PanelInicial />
       <AgregarProductos createProduct={createProduct} />
       <ListaProductos products={products} deleteProduct={deleteProduct}/>
     </div>

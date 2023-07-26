@@ -13,7 +13,7 @@ function AgregarProductos({ createProduct }) {
   };
 
   return (
-    <div className="flex-1 overflow-auto h-80  md:w-auto sm:w-1/2 bg-yellow-500 shadow-lg rounded-lg justify-items-center ">
+    <div >
       <h1>Agregar producto</h1>
       <form onSubmit={handleSubmit}>
         <input
@@ -31,7 +31,7 @@ function AgregarProductos({ createProduct }) {
           placeholder="Escriba el precio del producto"
           onChange={(e) => setPrice(e.target.value)}
         />
-        <button className="rounded-full bg-green-400" >Guardar Producto</button>
+        <button className="rounded-lg bg-green-400" >Guardar Producto</button>
       </form>
     </div>
   );
