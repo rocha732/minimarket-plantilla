@@ -6,6 +6,8 @@ function ListaProductos({ products, deleteProduct }) {
       <table className="table-auto">
         <thead className="text-center">
           <tr>
+            
+          <th className="border border-slate-600">Codigo</th>
             <th className="border border-slate-600">Producto</th>
             <th className="border border-slate-600">Descripcion</th>
             <th className="border border-slate-600">Precio</th>
@@ -15,6 +17,7 @@ function ListaProductos({ products, deleteProduct }) {
         <tbody className=" ">
           {products.map((products) => (
             <tr key={products.id}>
+              <td className="border border-slate-700">{products.id}</td>
               <td className="border border-slate-700">{products.title}</td>
               <td className="border border-slate-700">
                 {products.description}

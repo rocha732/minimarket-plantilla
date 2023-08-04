@@ -3,7 +3,7 @@ import ListaProductos from "./ListaProductos";
 import PanelInicial from "./PanelInicial";
 import { products as data } from "./data/products";
 import { useState, useEffect } from "react";
-
+import CajaRegistradora from "./CajaRegistradora";
 function App() {
   const [products, setProducts] = useState([]);
   useEffect(() => {
@@ -28,6 +28,7 @@ function App() {
   return (
     <div>
       <PanelInicial />
+      <CajaRegistradora />
       <AgregarProductos createProduct={createProduct} />
       <ListaProductos products={products} deleteProduct={deleteProduct}/>
     </div>
